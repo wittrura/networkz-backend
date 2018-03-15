@@ -1,3 +1,5 @@
+const path = require('path');
+
 module.exports = {
 
   development: {
@@ -16,7 +18,7 @@ module.exports = {
   test: {
     client: 'pg',
     connection: {
-      database: 'networkz-test',
+      database: 'networkz_test',
     },
     migrations: {
       directory: path.join(__dirname, 'db', 'migrations')
